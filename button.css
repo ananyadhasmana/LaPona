@@ -1,0 +1,32 @@
+.btn{
+    font-size: 17px;
+    border-radius: 2.5rem;
+    display: inline-block;
+    background: white;
+    padding: 1.3rem 3rem;
+    border: none;
+    font-weight: 700;
+    box-shadow: 0 4px 10px slategray;
+    position: relative;
+    margin-top: 3rem;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.btn::after{
+    content: "";
+    background: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    border-radius: 3rem;
+    transition: all .3s;
+}
+
+.btn:hover::after{
+    transform: scale(2);
+    opacity: 0;
+}

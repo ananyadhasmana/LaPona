@@ -1,0 +1,225 @@
+@import url(button.css);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'dancing script',cursive;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+section{
+    width: 100vw;
+}
+
+.background{
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+header{
+    background-image: linear-gradient(rgba(255,255,255,0.441),rgba(0,0,255,0.192)),url(a.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    z-index: 10;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav{
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+}
+
+nav a{
+    color: black;
+}
+
+nav h1{
+    float: left;
+    font-size: 3rem;
+    padding: .5rem 2rem;
+}
+
+nav ul{
+   position: absolute;
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   top: 2.5rem;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    padding: 2.5rem;
+    transition: all .3s;
+    font-size: 18px;
+}
+nav ul li a:hover{
+    color: palevioletred;
+}
+
+.mid-section{
+    position: sticky;
+    top: 40%;
+    text-align: center;
+    margin-bottom: 15rem;
+}
+
+.mid-section h1{
+    font-size: 5rem;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 3px 5px rgba(0,0,0,0.986);
+    animation: animate 3s ease;
+}
+
+@keyframes animate{
+    0%{
+        transform: translateY(-15);
+        opacity: 0;
+    }
+}
+
+.sec-2{
+    background-image: linear-gradient(rgba(255,255,255,0.5),rgba(0,0,0,0.05)),url(b.jpg);
+    text-align: center;
+    font-size: 3.2rem;
+    color: rgb(0,0,61);
+    padding: 20rem;
+}
+.margin-top{
+    margin-top: 5rem;
+}
+
+.sec-3{
+    background-image:  linear-gradient( rgba(255,255,255,0.5),rgba(0,0,0,0.05)),url(e.jpg);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all .4s ;
+}
+.img-sec{
+    height: 100%;
+    width: 50%;
+    position: relative;
+}
+.sec-3 img{
+    height: 25rem;
+    border-radius: .35rem;
+    position: absolute;
+    box-shadow: 0 1rem 3rem rgba(0,0,0);
+    cursor: pointer;
+    padding: 1rem;
+}
+.sec-3 img:nth-child(1){
+    transform: rotate(-4deg);
+    top: 15%;
+    left: 20%;
+}
+.sec-3 img:nth-child(2){
+    transform: rotate(4deg);
+    top: 45%;
+    left: 30%;
+}
+.descp-sec{
+    width: 40%;
+    padding: 2rem;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 1rem 2rem rgb(0, 0, 0,0.6);
+    border-radius: .5rem;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+    backdrop-filter: blur(.5rem);
+}
+.descp-sec h2{
+    font-size: 4rem;
+    font-style: italic;
+    font-weight: bolder;
+}
+
+.sec-3 img:hover{
+    z-index: 1;
+}
+.sec-3 img:nth-child(1):hover{
+    transform: scale(1.1);
+}
+.sec-3 img:nth-child(2):hover{
+    transform: scale(1.1);}
+
+    .sec-4{
+        background-image:  linear-gradient( rgba(255,255,255,0.5),rgba(0,0,0,0.05)),url(bg.jpg);
+        padding: 5rem 0rem;
+        display: flex;
+        justify-content: center;
+            text-align: center;}
+    
+    .sec-4 form{
+        width: 30%;
+    }
+    .sec-4  h2{
+    padding: 2rem;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0 3px 1rem rgba(0,0,0,0.5);
+    }
+    .sec-4 .textfield{
+        padding: 2rem;
+        position: relative;
+    }
+    .sec-4 .input{
+        padding: 1rem;
+        border-radius: 2px;
+        font-size: 1.7rem;
+        font-weight: bold;
+        color: rgb(49, 44, 44);
+        border: none;
+        outline: none;
+        width: 100%;
+        font-style: italic;
+    }
+    .sec-4 label{
+        font-size: 2rem;
+        font-weight: bold;
+        color: #212;
+        position: absolute;
+        top: 2.5rem;
+        left: 3rem;
+        pointer-events: none;
+        transition: all .5s;
+    }
+    .sec-4 .input::placeholder{
+        opacity: 0;
+    }
+    .sec-4 .input:focus ~label, .sec-4 .input:not(:placeholder-shown) ~label{
+        top: 0;
+        font-size: 1.5rem;
+    }
+    .sec-4 .btn{
+        z-index: 0;
+    }
+    
